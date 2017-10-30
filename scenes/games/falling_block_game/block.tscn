@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://sprites/actors/block32x32.png" type="Texture" id=1]
+
+[node name="block" type="Sprite"]
+
+texture = ExtResource( 1 )
+
+

@@ -1,0 +1,110 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/ui/colour_picker.gd" type="Script" id=1]
+[ext_resource path="res://sprites/ui/buttons/button_done.png" type="Texture" id=2]
+[ext_resource path="res://sprites/ui/buttons/button_cancel.png" type="Texture" id=3]
+
+[node name="colour_picker" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1280.0
+margin/bottom = 720.0
+
+[node name="background" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 288.0
+margin/bottom = 0.0
+
+[node name="colourpicker" type="ColorPicker" parent="background"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 288.0
+margin/bottom = 441.0
+alignment = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="background"]
+
+rect/scale = Vector2( 0.66, 0.66 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 99.0
+margin/top = 679.0
+margin/right = 499.0
+margin/bottom = 726.0
+alignment = 0
+
+[node name="button_done" type="TextureButton" parent="background/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 198.0
+margin/bottom = 47.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 2 )
+
+[node name="button_cancel" type="TextureButton" parent="background/HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 202.0
+margin/top = 0.0
+margin/right = 400.0
+margin/bottom = 47.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+
+[node name="canvas_example" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 589.0
+margin/top = 104.0
+margin/right = 1101.0
+margin/bottom = 616.0
+
+[node name="object_example" type="Panel" parent="canvas_example"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 192.0
+margin/top = 192.0
+margin/right = 320.0
+margin/bottom = 320.0
+
+
